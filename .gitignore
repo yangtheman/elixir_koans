@@ -1,0 +1,21 @@
+# Elixir/Erlang artifacts
+*.beam
+*.ez
+erl_crash.dump
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+_build/
+deps/
+doc/
+.mix/
