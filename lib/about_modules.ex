@@ -110,7 +110,7 @@ defmodule AboutModules do
     # Both operate on different data types and contexts
   end
 
-  def test_03_module_attributes do
+  def test_02_module_attributes do
     # CONCEPT: Module Attributes and Compile-Time Constants
     #
     # Module attributes serve as compile-time constants, configuration,
@@ -167,7 +167,7 @@ defmodule AboutModules do
     # @compile :debug_info
   end
 
-  def test_07_nested_modules do
+  def test_03_nested_modules do
     # CONCEPT: Module Hierarchy and Namespacing
     #
     # Nested modules create hierarchical namespaces, enabling logical
@@ -226,7 +226,7 @@ defmodule AboutModules do
     # With alias: User.create/1 (after alias MyApp.Accounts.User)
   end
 
-  def test_module_aliases do
+  def test_04_module_aliases do
     # CONCEPT: Aliases and Import Management
     #
     # Aliases create short names for long module paths, improving
@@ -362,7 +362,7 @@ defmodule AboutModules do
     # import ExUnit.Assertions, only: [assert: 1]  # Testing
   end
 
-  def test_requiring_modules do
+  def test_06_requiring_modules do
     # CONCEPT: Macro Requirements and Compile-Time Dependencies
     #
     # The 'require' directive makes macros available from another module.
@@ -438,7 +438,7 @@ defmodule AboutModules do
     # If you get "undefined function" error, check imports/aliases
   end
 
-  def test_module_documentation do
+  def test_07_module_documentation do
     # CONCEPT: Documentation as First-Class Feature
     #
     # Elixir treats documentation as a first-class feature, storing
@@ -589,7 +589,7 @@ defmodule AboutModules do
     # end
   end
 
-  def test_use_directive do
+  def test_09_use_directive do
     # CONCEPT: Code Injection and Module Extension
     #
     # The 'use' directive is Elixir's mechanism for code injection and
@@ -676,7 +676,7 @@ defmodule AboutModules do
     # - Consider alias/import first for simple cases
   end
 
-  def test_module_callbacks do
+  def test_10_module_callbacks do
     # CONCEPT: Compile-Time Hooks and Code Generation
     #
     # Module callbacks are hooks that execute during compilation,

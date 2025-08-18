@@ -89,7 +89,7 @@ defmodule AboutStructs do
     defstruct name: nil, age: 0, email: nil
   end
 
-  def test_creating_structs do
+  def test_01_creating_structs do
     # CONCEPT: Struct Creation and Field Access
     #
     # Structs provide a way to create typed maps with predefined fields.
@@ -138,7 +138,7 @@ defmodule AboutStructs do
     # User.__struct__(age: 50)      # Returns struct with overrides
   end
 
-  def test_06_struct_default_values do
+  def test_02_struct_default_values do
     # CONCEPT: Default Values and Struct Initialization
     #
     # Structs can define default values for fields, making it convenient
@@ -206,7 +206,7 @@ defmodule AboutStructs do
     # are initialized to predictable values.
   end
 
-  def test_04_updating_structs do
+  def test_03_updating_structs do
     # CONCEPT: Immutable Updates and Struct Modification
     #
     # Like all Elixir data structures, structs are immutable. Updates
@@ -293,7 +293,7 @@ defmodule AboutStructs do
     # end
   end
 
-  def test_05_struct_pattern_matching do
+  def test_04_struct_pattern_matching do
     # CONCEPT: Pattern Matching with Structs
     #
     # Structs excel at pattern matching, allowing you to destructure
@@ -400,7 +400,7 @@ defmodule AboutStructs do
     # ✅ Documentation - patterns serve as documentation
   end
 
-  def test_09_struct_vs_map do
+  def test_05_struct_vs_map do
     # CONCEPT: Structs vs Maps Comparison
     #
     # Understanding the relationship between structs and maps helps
@@ -504,7 +504,7 @@ defmodule AboutStructs do
     defstruct [:name, :price, description: "No description", in_stock: true]
   end
 
-  def test_enforced_keys do
+  def test_06_enforced_keys do
     # CONCEPT: Required Fields and Compile-Time Validation
     #
     # @enforce_keys ensures that certain fields must be provided
@@ -621,7 +621,7 @@ defmodule AboutStructs do
     # ❌ Avoid too many required fields (makes struct hard to use)
   end
 
-  def test_struct_introspection do
+  def test_07_struct_introspection do
     # CONCEPT: Struct Introspection and Type Information
     #
     # Structs carry type information that can be inspected at runtime,
@@ -762,7 +762,7 @@ defmodule AboutStructs do
     end
   end
 
-  def test_struct_with_functions do
+  def test_08_struct_with_functions do
     # CONCEPT: Struct Modules with Behavior Functions
     #
     # Structs are often defined alongside functions that operate on them,
@@ -896,7 +896,7 @@ defmodule AboutStructs do
     # ✅ Document expected behavior and constraints
   end
 
-  def test_struct_update_syntax do
+  def test_09_struct_update_syntax do
     # CONCEPT: Advanced Update Patterns and Syntax
     #
     # The struct update syntax provides a clean way to create modified
@@ -1182,7 +1182,7 @@ defmodule AboutStructs do
     # ❌ Don't create circular references between structs
   end
 
-  def test_struct_as_map_operations do
+  def test_11_struct_as_map_operations do
     # CONCEPT: Struct and Map Function Interoperability
     #
     # Since structs are built on top of maps, they can use most Map

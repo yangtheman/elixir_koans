@@ -103,7 +103,7 @@ defmodule AboutKeywordLists do
 
   import Enlightenment
 
-  def test_creating_keyword_lists do
+  def test_01_creating_keyword_lists do
     # CONCEPT: Keyword List Structure and Syntax
     #
     # Keyword lists are fundamentally lists of tuples with atom keys.
@@ -134,7 +134,7 @@ defmodule AboutKeywordLists do
     # metadata = [created_at: DateTime.utc_now(), version: "1.0"]
   end
 
-  def test_keyword_list_sugar_syntax do
+  def test_02_keyword_list_sugar_syntax do
     # CONCEPT: Syntactic Sugar and Equivalence
     #
     # The [key: value] syntax is pure syntactic sugar for [{:key, value}].
@@ -171,7 +171,7 @@ defmodule AboutKeywordLists do
     # [{key, "value"}]         # key is the variable content
   end
 
-  def test_accessing_keyword_list_values do
+  def test_03_accessing_keyword_list_values do
     # CONCEPT: Key-Value Access Patterns
     #
     # Keyword lists provide several ways to access values by key.
@@ -210,7 +210,7 @@ defmodule AboutKeywordLists do
     # - fetch!/2: When key must exist
   end
 
-  def test_keyword_get_with_default do
+  def test_04_keyword_get_with_default do
     # CONCEPT: Default Values and Configuration Patterns
     #
     # Keyword.get/3 with defaults is the cornerstone of Elixir's
@@ -253,7 +253,7 @@ defmodule AboutKeywordLists do
     # start_server(host: "0.0.0.0", ssl: true) # Override multiple values
   end
 
-  def test_accessing_with_square_brackets do
+  def test_05_accessing_with_square_brackets do
     # CONCEPT: Bracket Syntax and Access Protocol
     #
     # The [] syntax works with keyword lists through the Access protocol,
@@ -296,7 +296,7 @@ defmodule AboutKeywordLists do
     # - Part of data transformation pipelines
   end
 
-  def test_updating_keyword_lists do
+  def test_06_updating_keyword_lists do
     # CONCEPT: Immutable Updates and List Semantics
     #
     # Keyword list updates follow immutable patterns, creating new lists
@@ -341,7 +341,7 @@ defmodule AboutKeywordLists do
     # 3. Using Keyword.merge/2 for bulk updates
   end
 
-  def test_duplicate_keys_allowed do
+  def test_07_duplicate_keys_allowed do
     # CONCEPT: Duplicate Keys and Multi-Value Scenarios
     #
     # Unlike maps, keyword lists allow duplicate keys. This enables
@@ -395,7 +395,7 @@ defmodule AboutKeywordLists do
     # order matters and multiple values for the same key are meaningful.
   end
 
-  def test_13_keyword_lists_vs_maps do
+  def test_08_keyword_lists_vs_maps do
     # CONCEPT: Choosing Between Data Structures
     #
     # Understanding when to use keyword lists vs maps is crucial for
@@ -458,7 +458,7 @@ defmodule AboutKeywordLists do
     # end
   end
 
-  def test_function_options_pattern do
+  def test_09_function_options_pattern do
     # CONCEPT: Function Options and API Design
     #
     # The function options pattern using keyword lists is fundamental
@@ -521,7 +521,7 @@ defmodule AboutKeywordLists do
     # - Configuration: pool_size: 10, max_retries: 3
   end
 
-  def test_05_keyword_list_ordering do
+  def test_10_keyword_list_ordering do
     # CONCEPT: Insertion Order Preservation
     #
     # Keyword lists maintain the order of insertion, which can be crucial
@@ -576,7 +576,7 @@ defmodule AboutKeywordLists do
     # - Keyword lists: Always maintain order (they're lists!)
   end
 
-  def test_merging_keyword_lists do
+  def test_11_merging_keyword_lists do
     # CONCEPT: Configuration Merging and Composition
     #
     # Keyword list merging is essential for composing configurations,

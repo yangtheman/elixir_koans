@@ -373,7 +373,12 @@ defmodule AboutTruthAndFalse do
     result = unless nil, do: "executed", else: "not executed"
     assert_equal(Enlightenment.__(), result)
 
-    # case with truthiness
+    # case with truthiness - IMPORTANT GUARD EXCEPTION!
+    # This demonstrates a crucial difference between guards and regular truthiness.
+    # While 0 is truthy in regular Elixir code (if, &&, ||), guards have stricter rules.
+    # The guard `x when x` only matches when x is literally the boolean `true`.
+    # Even though 0 is truthy elsewhere, the guard `x when x` with x=0 will NOT match.
+    # This is because guards require proper boolean expressions, not just "truthy" values.
     result =
       case 0 do
         x when x -> "truthy branch"

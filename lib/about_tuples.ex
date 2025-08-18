@@ -84,7 +84,7 @@ defmodule AboutTuples do
     # Any "update" operation creates a new tuple
   end
 
-  def test_03_tuple_size do
+  def test_02_tuple_size do
     # CONCEPT: Tuple Size - Fixed and Efficient
     #
     # tuple_size/1 returns the number of elements in a tuple in constant time O(1).
@@ -107,7 +107,7 @@ defmodule AboutTuples do
     # number of fields is known and fixed
   end
 
-  def test_04_accessing_tuple_elements do
+  def test_03_accessing_tuple_elements do
     # CONCEPT: Fast Element Access by Index
     #
     # elem/2 provides O(1) constant-time access to tuple elements by index.
@@ -130,7 +130,7 @@ defmodule AboutTuples do
     # For safe access, you might wrap in try/rescue or use pattern matching
   end
 
-  def test_updating_tuple_elements do
+  def test_04_updating_tuple_elements do
     # CONCEPT: Tuple Updates Create New Tuples
     #
     # Since tuples are immutable, "updating" an element creates a new tuple
@@ -153,7 +153,7 @@ defmodule AboutTuples do
     # - Multiple processes can safely share the same tuple
   end
 
-  def test_tuple_pattern_matching do
+  def test_05_tuple_pattern_matching do
     # CONCEPT: Destructuring Tuples with Pattern Matching
     #
     # Pattern matching is where tuples really shine. You can destructure
@@ -182,7 +182,7 @@ defmodule AboutTuples do
     # profession = elem(person, 2)
   end
 
-  def test_partial_tuple_pattern_matching do
+  def test_06_partial_tuple_pattern_matching do
     # CONCEPT: Selective Pattern Matching with Wildcards
     #
     # You don't always need all elements from a tuple. Pattern matching
@@ -216,7 +216,7 @@ defmodule AboutTuples do
     end
   end
 
-  def test_tuples_for_return_values do
+  def test_07_tuples_for_return_values do
     # CONCEPT: Tagged Tuples for Function Return Values
     #
     # Tagged tuples are a fundamental pattern in Elixir for function return values.
@@ -243,7 +243,7 @@ defmodule AboutTuples do
     # end
   end
 
-  def test_12_tuple_to_list_conversion do
+  def test_08_tuple_to_list_conversion do
     # CONCEPT: Converting Between Tuples and Lists
     #
     # Sometimes you need to convert between tuples and lists, typically
@@ -267,7 +267,7 @@ defmodule AboutTuples do
     # points = Enum.map(coordinates, &Tuple.to_list/1)  # Convert for processing
   end
 
-  def test_10_appending_to_tuple do
+  def test_09_appending_to_tuple do
     # CONCEPT: Adding Elements to Tuples
     #
     # Tuple.append/2 creates a new tuple with an additional element at the end.
@@ -291,7 +291,7 @@ defmodule AboutTuples do
     # Tuples work best when size is known and fixed
   end
 
-  def test_11_deleting_from_tuple do
+  def test_10_deleting_from_tuple do
     # CONCEPT: Removing Elements from Tuples
     #
     # Tuple.delete_at/2 creates a new tuple with an element removed at
@@ -311,7 +311,7 @@ defmodule AboutTuples do
     # Again, frequent deletion suggests a list or map might be better
   end
 
-  def test_inserting_into_tuple do
+  def test_11_inserting_into_tuple do
     # CONCEPT: Inserting Elements into Tuples
     #
     # Tuple.insert_at/3 creates a new tuple with an element inserted at
@@ -331,7 +331,7 @@ defmodule AboutTuples do
     # Consider the performance implications of frequent insertions
   end
 
-  def test_14_tuple_comparison do
+  def test_12_tuple_comparison do
     # CONCEPT: Tuple Comparison and Ordering
     #
     # Tuples are compared lexicographically - element by element from left to right.
@@ -353,7 +353,7 @@ defmodule AboutTuples do
     # This enables natural sorting: Enum.sort([{2, 1}, {1, 3}, {1, 2}])
   end
 
-  def test_06_nested_tuples do
+  def test_13_nested_tuples do
     # CONCEPT: Tuples Containing Other Tuples
     #
     # Tuples can contain other tuples, creating nested structures.
@@ -381,7 +381,7 @@ defmodule AboutTuples do
     # Pattern matching makes nested access clean and safe
   end
 
-  def test_tuples_vs_lists do
+  def test_14_tuples_vs_lists do
     # CONCEPT: Choosing Between Tuples and Lists
     #
     # Understanding when to use tuples vs lists is crucial for writing
@@ -426,7 +426,7 @@ defmodule AboutTuples do
     # ❌ Fixed structure validation
   end
 
-  def test_tuple_destruction_and_construction_patterns do
+  def test_15_tuple_destruction_and_construction_patterns do
     # CONCEPT: Advanced Tuple Patterns
     #
     # Tuples support various advanced patterns that make code more expressive

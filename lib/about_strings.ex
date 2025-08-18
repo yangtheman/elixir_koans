@@ -121,7 +121,7 @@ defmodule AboutStrings do
     # 4. More efficient for multiple insertions
   end
 
-  def test_04_string_interpolation_with_expressions do
+  def test_05_string_interpolation_with_expressions do
     # CONCEPT: Complex Expressions in String Interpolation
     #
     # String interpolation can contain any valid Elixir expression, not just

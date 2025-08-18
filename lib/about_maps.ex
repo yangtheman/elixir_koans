@@ -269,7 +269,7 @@ defmodule AboutMaps do
     # - Keys might not exist
   end
 
-  def test_merge_maps do
+  def test_08_merge_maps do
     # CONCEPT: Combining Maps with Merge
     #
     # Map merging is essential for combining configuration, applying defaults,
@@ -306,7 +306,7 @@ defmodule AboutMaps do
     # - State updates: applying changes to existing state
   end
 
-  def test_deleting_from_maps do
+  def test_09_deleting_from_maps do
     # CONCEPT: Key Removal and Data Sanitization
     #
     # Map.delete/2 creates a new map without specified keys. This is
@@ -336,7 +336,7 @@ defmodule AboutMaps do
     # Performance note: O(log n) for each key in large maps
   end
 
-  def test_11_map_keys_and_values do
+  def test_10_map_keys_and_values do
     # CONCEPT: Extracting Map Structure
     #
     # Map.keys/1 and Map.values/1 extract the structure of a map,
@@ -370,7 +370,7 @@ defmodule AboutMaps do
     # Map.take(user_profile, allowed_keys)  # Only expose safe fields
   end
 
-  def test_checking_map_membership do
+  def test_11_checking_map_membership do
     # CONCEPT: Key Existence Testing
     #
     # Map.has_key?/2 tests whether a key exists in a map without
@@ -404,7 +404,7 @@ defmodule AboutMaps do
     # end
   end
 
-  def test_map_pattern_matching do
+  def test_12_map_pattern_matching do
     # CONCEPT: Destructuring Maps with Pattern Matching
     #
     # Pattern matching with maps is incredibly powerful, allowing you to
@@ -439,7 +439,7 @@ defmodule AboutMaps do
     # This makes error handling and data processing very clean and safe
   end
 
-  def test_partial_map_pattern_matching do
+  def test_13_partial_map_pattern_matching do
     # CONCEPT: Selective Data Extraction
     #
     # Map pattern matching's killer feature is selective extraction - you
@@ -476,7 +476,7 @@ defmodule AboutMaps do
     # - Clear optimization opportunities
   end
 
-  def test_map_comprehension do
+  def test_14_map_comprehension do
     # CONCEPT: Transforming Maps with Comprehensions
     #
     # Map comprehensions provide a clean, functional way to transform maps.
@@ -512,7 +512,7 @@ defmodule AboutMaps do
     # The into: %{} is crucial - without it, you get a list of tuples!
   end
 
-  def test_13_nested_maps do
+  def test_15_nested_maps do
     # CONCEPT: Hierarchical Data with Nested Maps
     #
     # Nested maps are perfect for representing hierarchical data like JSON,
@@ -558,7 +558,7 @@ defmodule AboutMaps do
     # get_in/2 is essential for working with external data like JSON APIs
   end
 
-  def test_updating_nested_maps do
+  def test_16_updating_nested_maps do
     # CONCEPT: Deep Updates in Nested Structures
     #
     # Updating nested maps requires special functions since you need to
